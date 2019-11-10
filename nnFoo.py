@@ -25,7 +25,7 @@ plt.show()
 model = keras.Sequential([
     keras.layers.Flatten(input_shape=(28, 28)), #flatten (compresses the 2d array)
     keras.layers.Dense(128, activation='relu'), #hidden layer - rectified linear activaton
-    keras.layers.Dense(10, activation='softmax') #output layer - softmax 0-1 
+    keras.layers.Dense(10, activation='softmax') #output layer - softmax 0-1 - 10 clothing total
 ])
 
 #look these up (adam, sparse, the metrics etc..)
