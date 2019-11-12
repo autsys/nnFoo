@@ -34,10 +34,12 @@ model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=
 #epoch is the amount of times the entire data set is ran through (how many times each image is seen)
 model.fit(train_images, train_labels, epochs=5) #epoch is a variable game (play with different epochs)
 
-test_loss, test_acc = model.evaluate(test_images, test_labels)
 
-print("Tested Acc:", test_acc)
+#test_loss, test_acc = model.evaluate(test_images, test_labels)
+#print("Tested Acc:", test_acc)
 
+prediction = model.predict(test_images)
+print(prediction)
 
 
 
